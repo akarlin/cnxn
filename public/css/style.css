@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('font/BEBAS___-webfont.eot');
+    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BEBAS___-webfont.woff') format('woff'),
+         url('font/BEBAS___-webfont.ttf') format('truetype'),
+         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('font/leaguegothic-regular-webfont.eot');
+    src: url('font/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/leaguegothic-regular-webfont.woff') format('woff'),
+    url('font/leaguegothic-regular-webfont.ttf') format('truetype'),
+    url('font/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    font-family: 'League Gothic';
+	height:100%;
+}
+
+.paragraph{
+    color:#fff;
+    text-transform:uppercase;
+}
+
+.paragraph h1{
+    font-size:50px;
+}
+
+.paragraph h2{
+    font-size:75px;
+}
+
+.paragraph h3{
+    font-size:45px;
+}
+
+.paragraph h4{
+    color:#ff0000;
+    font-size:45px;
+}
+
+.blurb{
+    color:#fff;
+    text-transform:uppercase;
+}
+
+.blurb h1{
+    font-size: 30px;
+}
+
+.blurb h2{
+    color: #8b0000;
+    font-size:100px;
+}
+
+.blurb h3{
+    font-size: 30px;
+    width: 400px;
+}
+
+
+.info{
+    color:#fff;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    text-transform:uppercase;
+}
+
+.info h1{
+    font-size:35px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.info h2{
+    font-size:25px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.info h3{
+    font-size:25px;
+    height: 25px;
+}
+
+.contact{
+    position: absolute;
+    margin-left: 5%;
+    width: 20%;
+}
+
+.contact h1{
+    margin-top: 2%;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+    text-transform:uppercase;
+}
+
+.contact img{
+    width: 250px;
+    margin-top: 2%;
+}
+
+.roundBorder {
+	width: 50%;
+}
+
+/*********
+*******/
+
+.navigation{
+    top: 0px;
+    height: 30px;
+    left: 5px;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.navigation li{
+	color:#fff;
+    background: #000000;
+    margin-top: 10px;
+    padding: 0 50px;
+	line-height:30px;
+	margin-bottom:2px;
+    font-size: 20px;
+    float: right;
+}
+
+.navigation a{
+    color: #ffffff;
+    background: #000000;
+    line-height:30px;
+    margin-bottom:2px;
+    font-size: 20px;
+    float: none;
+}
+.navigation li:hover,.active{
+	cursor:pointer;
+    background: #8b0000;
+}
+
+.user{
+    padding-left: 50px;
+    right: 0px;
+    height: 30px;
+    margin-left: 50px;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.user li{
+    color:#fff;
+    background: #000000;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.user a{
+    color: #ffffff;
+    float: none;
+    text-decoration: none;
+}
+
+.user li:hover,.active{
+    cursor:pointer;
+    background: #8b0000;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);	
+	background: no-repeat center fixed; 
+}
+
+.slide h1 {
+    color: #ffffff;
+}
+
+.button{
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	background-color:#333333;
+	background-image:url(../images/arrow.png);
+}
+.button:hover{
+	background-color:#494949;
+	cursor:pointer;
+}
+
+#close:hover{
+	background-color: #ff0000;
+	cursor:pointer;
+}
+
+/******************************
+ SLIDE 1
+*******************************/
+#slide1{
+    background-image: url(/images/imported/page4small.jpg);
+}
+
+#map{
+    position: relative;
+    top: 60px;
+}
+
+#map img{
+    position: absolute;
+    right: 0px;
+    width: 700px;
+}
+/******************************
+ SLIDE 2
+*******************************/
+#slide2{
+    background-image:url(/images/map_background.png);
+}
+
+/******************************
+ SLIDE 3
+*******************************/
+#slide3{
+    background-image:url(/images/imported/page1small.jpg);
+}
+
+/******************************
+ SLIDE 4
+*******************************/
+
+#slide4{
+    background-image:url(/images/contacts_background.png);
+}
+
+
+/******************************
+ SLIDE 5
+*******************************/
+
+#slide5{
+    background-image:url(/images/imported/page3.jpg);
+}
+
+/******************************
+ SLIDE 6
+*******************************/
+
+#slide6{
+    background-image:url(/images/imported/page4.jpg);
+}
+
+/******************************
+ SLIDE 7
+*******************************/
+
+#slide7{
+    background-image:url(/images/imported/page5.jpg);
+}
+
+/******************************
+ SLIDE 8
+*******************************/
+
+#slide8{
+	background-image:url(/images/imported/page2.jpg);
+}
+
