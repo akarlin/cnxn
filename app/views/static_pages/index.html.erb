@@ -1,0 +1,119 @@
+<img src="/images/map_background.png" style="position: fixed; width: 100%; height: 100%;">
+
+<div style="position: fixed; z-index: 1; background: #000000; width: 100%; height: 50px;">
+    <img src="/images/logo.png" style="position: absolute; height: 100px; top: 0px; left: 0px;">
+  <ul id="signupin" class="user" style="float: right;">
+
+  </ul>
+  <ul class="navigation" style="position: relative; left: 120px; width: 800px;">
+    <li data-slide="4">the cnxn team</li>
+    <li data-slide="3">about us</li>
+    <li data-slide="2">cnxn map</li>
+    <li data-slide="1">video</li>
+  </ul>
+</div>
+
+<div class="slide" id="slide1" data-slide="1">
+	
+	
+  <img src="/images/video_background.png" style="position: absolute; top: -10px; left: 0; width: 100%; height: 800px;" alt=""
+  	data-stellar-ratio="1.5">
+  <a class="button" data-slide="2" title=""></a>
+  
+  <div id="video_paragraph" class="paragraph" style="position: absolute; top: 240px; left: 50px; width: 70%;" data-stellar-ratio="2">
+    <h1 style="position: relative;">welcome to cnxn</h1>
+    <h2 style="position: relative;">
+      the athletes digital combine</h2>
+    <h3 style="position: relative;">
+      here to serve the modern athlete</h3>
+    <h4  onClick="initVideo()" style="position: relative; left: 63px;">
+    <img src="/images/red_play_button.png" style="position:absolute; width:5%; height:80%; left: -50px; top: 9px">  click here to play our video</h4>
+  </div>
+  
+  <div id="video_player" style="background-color: #000000; width: 100%; height: 100%">
+    <div style="position: absolute; left: 10%;">
+    <video id="cnxn_video" class="video-js vjs-default-skin" controls
+           poster="http://video-js.zencoder.com/oceans-clip.jpg">
+      <source type="video/mp4" src="http://video-js.zencoder.com/oceans-clip.mp4">
+      <source type="video/webm" src="http://video-js.zencoder.com/oceans-clip.webm">
+    </video>
+    </div>
+    <img onclick="stopVideo()" id="close" src="/images/icon_close.png" style="border: 1px #ffffff solid; outline-offset: 5px; position: absolute; right: 50px; top: 100px;">
+	<script type="text/javascript">
+		document.getElementById('video_player').style.visibility = "hidden";
+		document.getElementById('signupin').style.visibility = "hidden";
+        var myPlayer = _V_("cnxn_video");
+        myPlayer.width($(document).width() * .8);
+        myPlayer.height($(window).height());
+	</script>
+  </div>
+
+</div><!--End Slide 1-->
+<div class="slide" id="slide2" data-slide="2">
+  <div id="map_canvas" style="width:40%; height:50%; top:125px; left:55%"></div>
+  <div class="blurb" style="height: 50%; width:40%; top:125px; left:55%" data-stellar-ratio="1">
+  <h1><script type="text/javascript">document.writeln(currentName);</script></h1>
+  <h2><script type="text/javascript">document.getElementById(currentTeam);</script></h2>
+  </div>
+  <a class="button" data-slide="3" title=""></a>
+
+</div><!--End Slide 2-->
+
+<div class="slide" id="slide3" data-slide="3">
+  <div class="blurb" style="position: relative; top: 125px; left: 5%; width: 50%;" data-stellar-ratio="2">
+    <h1 style="position: relative;">
+      where are we going</h1>
+    <h2 style="position: relative;">
+      we are cnxn</h2>
+    <h3 style="position: relative;">
+      we will establish credibility nationally with our core network of pro athletes and locally
+      with our community-focused business.</h3>
+  </div>
+
+  <a class="button" data-slide="4" title=""></a>
+
+</div><!--End Slide 3-->
+
+<div class="slide" id="slide4" data-slide="4">
+  <div style="position: relative; top: 120px; width: 100%;" data-stellar-ratio="2.5">
+    <div class="contact" style="left: 0%;">
+      <img src="/images/contacts/brian_verne.png"/>
+      <h1>brian verne, co-founder</h1>
+      <img src="/images/contacts/facebook.png" style="width: 30px;">
+      <img src="/images/contacts/twitter.png" style="width: 30px;">
+    </div>
+    <div class="contact" style="left: 33%;">
+      <img src="/images/contacts/michael_eppich.png">
+      <h1>michael eppich, co-founder</h1>
+      <img src="/images/contacts/facebook.png" style="width: 30px;">
+      <img src="/images/contacts/twitter.png" style="width: 30px;">
+    </div>
+    <div class="contact" style="left: 66%;">
+      <img src="/images/contacts/jack_dunn.png">
+      <h1>jack dunn, co-founder</h1>
+      <img src="/images/contacts/facebook.png" style="width: 30px;">
+      <img src="/images/contacts/twitter.png" style="width: 30px;">
+    </div>
+  </div>
+  <div style="position: relative; top: 350px; width: 100%;" data-stellar-ratio="1.5">
+    <div class="contact" style="left: 0%;">
+      <img src="/images/contacts/arden_mcwilliams.png">
+      <h1>arden mcwilliams, business development</h1>
+      <img src="/images/contacts/facebook.png" style="width: 30px;">
+      <img src="/images/contacts/twitter.png" style="width: 30px;">
+    </div>
+    <div class="contact" style="left: 33%;">
+      <img src="/images/contacts/corey_whiting.png">
+      <h1>corey whiting, developer</h1>
+      <img src="/images/contacts/facebook.png" style="width: 30px;">
+      <img src="/images/contacts/twitter.png" style="width: 30px;">
+    </div>
+    <div class="contact" style="left: 66%;">
+      <img src="/images/contacts/drew_karlin.png">
+      <h1>drew karlin, developer</h1>
+      <img src="/images/contacts/facebook.png" style="width: 30px;">
+      <img src="/images/contacts/twitter.png" style="width: 30px;">
+    </div>
+  </div>
+
+</div><!--End Slide 4-->
