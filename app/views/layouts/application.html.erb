@@ -35,6 +35,7 @@
   <script type="text/javascript">
       var currentName = "Name";
       var currentTeam = "Team";
+      var marker;
       function initialize() {
               var mapOptions = {
               styles: [ { "featureType": "administrative.country", "elementType": "geometry.stroke", "stylers": [ { "color": "#343434" }, { "weight": 2 }, { "visibility": "on" } ] },{ "featureType": "administrative", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "featureType": "water", "stylers": [ { "color": "#343434" } ] },{ "featureType": "landscape", "stylers": [ { "color": "#ff0000" } ] },{ "featureType": "poi", "stylers": [ { "color": "#ff0000" } ] },{ "featureType": "road", "stylers": [ { "visibility": "off" } ] },{ } ],
@@ -54,18 +55,125 @@
               map.scrollwheel = false;
               map.disableDoubleClickZoom = true;
 
-              var marker = new Array(new google.maps.Marker({ position: (new google.maps.LatLng(29.59577,-90.719535)), map: map, title:"A", team: "Eagles" }),
-                                     new google.maps.Marker({ position: (new google.maps.LatLng(-22.363882,131.044922)), map: map, title:"B", team: "Eagles" }),
-                                     new google.maps.Marker({ position: (new google.maps.LatLng(-23.363882,131.044922)), map: map, title:"C", team: "Eagles" }),
-                                     new google.maps.Marker({ position: (new google.maps.LatLng(-25.363882,131.044922)), map: map, title:"D", team: "Eagles" }));
+          marker = new Array(new google.maps.Marker(
+                  { position: (new google.maps.LatLng(29.59577,-90.719535)), map: map, title:"Aaron Morgan", team: "Jacksonville Jaguars"}),
+                  new google.maps.Marker({ position: (new google.maps.LatLng(38.252665,-85.758456
+                  )), map: map, title:"Alfonso Smith", team: "Arizona Cardinals" }),new google.maps.Marker({ position: (new google.maps.LatLng(38.252665,-85.758456
+                  )), map: map, title:"Corey Peters", team: "Atlanta Falcons" }), new google.maps.Marker({ position: (new google.maps.LatLng(39.506997,-84.745231)), map: map, title:"John Conner", team: "NY Jets" }),
 
-              google.maps.event.addListener(marker, 'click', function() {
-                  currentName = marker.title;
-                  currentTeam = marker.team;
-              });
+                  new google.maps.Marker({ position: (new google.maps.LatLng(38.040584,-84.503716)), map: map, title:"DeQuin Evans", team: "Cincinnati Bengals" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(35.429519,-85.723032)), map: map, title:"Ricky Lumpkin", team: "Arizona Cardinals" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(33.748995,-84.387982)), map: map, title:"Kiante Tripp", team: "Cleveland Browns" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(35.410694,-80.84285)), map: map, title:"David Mims", team: "Kansas City Chiefs" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(26.122308,-80.143379)), map: map, title:"Buddy Jackson", team: "Indianapolis Colts" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(40.050645,-77.520265)), map: map, title:"Wayne Tribue", team: "Denver Broncos" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(38.252665,-85.758456)), map: map, title:"Dexter Heyman", team: "Kansas City Chiefs" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(30.438256,-84.280733)), map: map, title:"Ronnie Sneed", team: "Detroit Lions" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(37.747857,-84.294654)), map: map, title:"Winston Guy", team: "Seattle Seahawks" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(33.349001,-96.548599)), map: map, title:"Adrian Hamilton", team: "Dallas Cowboys" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(33.748995,-84.387982)), map: map, title:"Trevard Lindley", team: "Philadelphia Eagles" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(34.052234,-118.243685)), map: map, title:"Cameron Graham", team: "Tennessee Titans" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(39.506997,-84.745231)), map: map, title:"Kurt Rocco", team: "New Orleans VooDoo" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(38.252665,-85.758456)), map: map, title:"Vic Anderson", team: "Montreal Alouettes" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(42.066885,-81.339941)), map: map, title:"Mike Porrini", team: "" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(39.768583,-86.157956)), map: map, title:"Julian Mavunga", team: "" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(42.066885,-81.339941)), map: map, title:"D’Aundray Brown", team: "" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(34.052234,-118.243685)), map: map, title:"Terence Joyner", team: "" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(41.411688,-82.12784)), map: map, title:"Tyler Bortnick", team: "Tampa Bay Rays" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(35.994033,-78.898619)), map: map, title:"Chucky Brown", team: "13 Year NBA Veteran" }),
+
+                  new google.maps.Marker({ position: (new google.maps.LatLng(41.411688,-82.12784)), map: map, title:"Phil Brua", team: "Toronto Blue Jays" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(41.411688,-82.12784)), map: map, title:"Tadaaki Hatta", team: "Fmr. Olympic Wrestling Coach" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(45.557945,-94.16324)), map: map, title:"Jordan Smith", team: "" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(40.695344,-80.304785)), map: map, title:"Jon D’Angelo", team: "Kentucky Monsters (UIFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(41.499495,-81.695409)), map: map, title:"Denayne Dixon", team: "Cleveland Gladiators" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(41.499495,-81.695409)), map: map, title:"Jeremy Farrell", team: "Pittsburgh Pirates Organization" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(33.9956,-118.433104)), map: map, title:"George Frisch", team: "Johnstown Generals (UIFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(41.878114,-87.629798)), map: map, title:"Omar Henry", team: "Boxer" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(40.654615,-73.559413)), map: map, title:"Jeff Hodges", team: "Corpus Christi Hammerheads" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(0.0, 0.0)), map: map, title:"Joe Horn", team: "Cleveland Gladiators" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(0.0, 0.0)), map: map, title:"Jose Jimenez", team: "Baseball" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(40.440625,-79.995886)), map: map, title:"LaRoi Johnson", team: "Erie Explosion (UIFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(33.9956,-118.433104)), map: map, title:"Marvin Johnson", team: "Danville Dragons (UIFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(40.984878,-72.615117)), map: map, title:"Joe Lopez", team: "Cleveland Gladiators (AFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(35.600945,-82.554015)), map: map, title:"Rashaud Mungro", team: "New Mexico Stars" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(39.952335,-75.163789)), map: map, title:"Darius Pettigrew", team: "Rome Rampage (UIFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(35.46756,-97.516428)), map: map, title:"Bryan Pray", team: "Green Bay Blizzards (UIFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(41.380, -81.786)), map: map, title:"Chris Schubert", team: "Spokane Shock (AFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(43.014, -83.689)), map: map, title:"Dan Skuta", team: "Cincinnati Bengals" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(40.7, -74.0)), map: map, title:"Lamarr Stewart", team: "Eastern Kentucky Drillers (UIFL)" }),
+
+                      new google.maps.Marker({ position: (new google.maps.LatLng(42.0, -79.0)), map: map, title:"Maurice Williams", team: "Cleveland Gladiators (AFL)" }),
+
+                          new google.maps.Marker({ position: (new google.maps.LatLng(42.0, -83.0)), map: map, title:"DeQwan Young", team: "Johnstown Generals (UIFL)" }),
+
+                          new google.maps.Marker({ position: (new google.maps.LatLng(33.0, -82.0)), map: map, title:"Corey Alberty", team: "" }));
+
+          for (var i = 0; i < marker.length; i++) {
+              google.maps.event.addListener(marker[i], 'click', function() {markerClick(this);  } );
+          }
 
 
           }
+
+      function changeText() {
+      document.getElementById('nameName').innerHTML = currentName;
+      document.getElementById('teamName').innerHTML = currentTeam;
+      }
+      function markerClick(mark) {
+          for ( var m = 0; m < marker.length; ++m )
+          {
+              if ( marker[m] == mark )
+              {
+                  var thisMarker = marker[m];
+                  currentName = thisMarker.title;
+                  currentTeam = thisMarker.team;
+                  changeText();
+                  return;
+              }
+          }
+
+      }
+
+
 
 
 
